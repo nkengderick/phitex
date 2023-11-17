@@ -26,3 +26,5 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .catch((err) => console.log(err));
 
   app.use('/patient', require('./routes/patientroute'))
+  app.use('/worker', require('./routes/workerroute'))
+  app.use('/appointment', require('./routes/appointmentroute'))
